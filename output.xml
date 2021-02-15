@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210215 12:19:32.120" rpa="false">
+<suite id="s1" name="Robot Project" source="C:\Users\sana.bakkari\Desktop\robot framework testing\robot project">
+<suite id="s1-s1" name="Test" source="C:\Users\sana.bakkari\Desktop\robot framework testing\robot project\test">
+<suite id="s1-s1-s1" name="TestSuite1" source="C:\Users\sana.bakkari\Desktop\robot framework testing\robot project\test\TestSuite1.robot">
+<test id="s1-s1-s1-t1" name="CreationDraft">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://common.project-incident-management.classic.hse-monitor.inte.dev2.hse-monitor.fr/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210215 12:19:32.714" level="INFO">Opening browser 'chrome' to base url 'http://common.project-incident-management.classic.hse-monitor.inte.dev2.hse-monitor.fr/'.</msg>
+<status status="PASS" starttime="20210215 12:19:32.714" endtime="20210215 12:19:42.539"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20210215 12:19:42.540" endtime="20210215 12:19:42.542"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUserName</arg>
+<arg>ecarette@infopro-digital.com</arg>
+</arguments>
+<msg timestamp="20210215 12:19:42.542" level="INFO">Typing text 'ecarette@infopro-digital.com' into text field 'id=txtUserName'.</msg>
+<status status="PASS" starttime="20210215 12:19:42.542" endtime="20210215 12:19:42.669"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUserPass</arg>
+<arg>demonitor01</arg>
+</arguments>
+<msg timestamp="20210215 12:19:42.669" level="INFO">Typing password into text field 'id=txtUserPass'.</msg>
+<msg timestamp="20210215 12:19:42.703" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210215 12:19:42.752" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210215 12:19:42.669" endtime="20210215 12:19:42.753"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=meConnecter</arg>
+</arguments>
+<msg timestamp="20210215 12:19:42.753" level="INFO">Clicking button 'id=meConnecter'.</msg>
+<status status="PASS" starttime="20210215 12:19:42.753" endtime="20210215 12:19:47.438"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20210215 12:19:47.439" endtime="20210215 12:19:47.441"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=incident</arg>
+</arguments>
+<msg timestamp="20210215 12:19:47.441" level="INFO">Clicking element 'id=incident'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210215 12:19:50.846" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210215 12:19:50.499" endtime="20210215 12:19:50.846"></status>
+</kw>
+<msg timestamp="20210215 12:19:51.005" level="FAIL">Element with locator 'id=incident' not found.</msg>
+<status status="FAIL" starttime="20210215 12:19:47.441" endtime="20210215 12:19:51.005"></status>
+</kw>
+<status status="FAIL" starttime="20210215 12:19:32.713" endtime="20210215 12:19:51.005" critical="yes">Element with locator 'id=incident' not found.</status>
+</test>
+<status status="FAIL" starttime="20210215 12:19:32.184" endtime="20210215 12:19:51.006"></status>
+</suite>
+<status status="FAIL" starttime="20210215 12:19:32.181" endtime="20210215 12:19:51.007"></status>
+</suite>
+<status status="FAIL" starttime="20210215 12:19:32.164" endtime="20210215 12:19:51.009"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Robot Project">Robot Project</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Test">Robot Project.Test</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="TestSuite1">Robot Project.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
